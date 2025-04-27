@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Retriever - The Perfect Family Dog</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'YOUR-GA-ID');
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Golden Retriever</h1>
+        <p>The Perfect Family Companion</p>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/golden-retriever.jpg" alt="Golden Retriever playing in a field" class="hero-image">
+            <div class="hero-content">
+                <h2>Meet the Golden Retriever</h2>
+                <p>Known for their friendly, tolerant attitudes and intelligence, Golden Retrievers are one of the most popular dog breeds in the world.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h3>Family Friendly</h3>
+                <p>Excellent with children and other pets</p>
+            </div>
+            <div class="feature">
+                <h3>Intelligent</h3>
+                <p>Easy to train and eager to please</p>
+            </div>
+            <div class="feature">
+                <h3>Active</h3>
+                <p>Great companions for outdoor activities</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Golden Retriever Website. All rights reserved.</p>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-banner">
+        <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies.</p>
+        <div class="cookie-buttons">
+            <a href="privacy-policy.html" class="cookie-link">Learn More</a>
+            <button onclick="acceptCookies()" class="cookie-button">Accept</button>
+        </div>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            document.getElementById('cookie-consent').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        // Check if cookies were already accepted
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            document.getElementById('cookie-consent').style.display = 'none';
+        }
+    </script>
+</body>
+</html> 
