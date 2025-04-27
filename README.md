@@ -9,7 +9,7 @@ A simple, visually appealing webpage showcasing Golden Retrievers.
 - `images/` - Directory containing website images
 
 ## Deployment
-- Production: [Production URL will be added after deployment]
+- Production: https://golden-chi.vercel.app/
 - Staging: [Staging URL will be added after deployment]
 
 ## Features
