@@ -6,47 +6,80 @@
     <title>Golden Retriever - The Perfect Family Dog</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA-ID"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZYDTQ5YSBK"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'YOUR-GA-ID');
+        gtag('config', 'G-ZYDTQ5YSBK');
     </script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
         <h1>Golden Retriever</h1>
         <p>The Perfect Family Companion</p>
+        <div class="header-decoration">
+            <i class="fas fa-paw"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-paw"></i>
+        </div>
     </header>
 
     <main>
         <section class="hero">
+            <!-- Trigger redeploy: Golden Retriever image should now be visible -->
             <img src="images/golden-retriever.jpg" alt="Golden Retriever playing in a field" class="hero-image">
             <div class="hero-content">
                 <h2>Meet the Golden Retriever</h2>
                 <p>Known for their friendly, tolerant attitudes and intelligence, Golden Retrievers are one of the most popular dog breeds in the world.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-heart"></i>
+                        <span>Family Friendly</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-brain"></i>
+                        <span>Highly Intelligent</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-running"></i>
+                        <span>Active & Playful</span>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="features">
             <div class="feature">
+                <i class="fas fa-home feature-icon"></i>
                 <h3>Family Friendly</h3>
-                <p>Excellent with children and other pets</p>
+                <p>Excellent with children and other pets, making them the perfect addition to any family.</p>
             </div>
             <div class="feature">
+                <i class="fas fa-graduation-cap feature-icon"></i>
                 <h3>Intelligent</h3>
-                <p>Easy to train and eager to please</p>
+                <p>Easy to train and eager to please, they excel in obedience and agility training.</p>
             </div>
             <div class="feature">
+                <i class="fas fa-hiking feature-icon"></i>
                 <h3>Active</h3>
-                <p>Great companions for outdoor activities</p>
+                <p>Great companions for outdoor activities, always ready for adventure and play.</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Golden Retriever Website. All rights reserved.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Golden Retriever Website. All rights reserved.</p>
+            <p>Despliegue forzado para ver la imagen 🐾</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
     </footer>
 
     <!-- Cookie Consent Banner -->
@@ -68,6 +101,13 @@
         if (localStorage.getItem('cookiesAccepted') === 'true') {
             document.getElementById('cookie-consent').style.display = 'none';
         }
+
+        // Show cookie banner with animation
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                document.getElementById('cookie-consent').classList.add('show');
+            }, 1000);
+        });
     </script>
 </body>
 </html> 
